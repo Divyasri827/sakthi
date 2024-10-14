@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMI Engineering College</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f5;
+        }
+        header {
+            background-image: url(https://media.licdn.com/dms/image/v2/C511BAQEqMhgWD89YAg/company-background_10000/company-background_10000/0/1584375160729/dmieckk_cover?e=2147483647&v=beta&t=IkLQPLjfmaWW2zcG1imCQoIc1cTaBFy2MAnVznn_aBo);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 56px;
+            font-weight: bold;
+            color:aqua;
+        }
+        nav {
+            background-color: lightcoral;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .cta-button {
+            padding: 10px 30px;
+            background-color:purple;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .grid-item {
+            width: 30%;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .grid-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #006400;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Chatbot styles */
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            display: none;
+            flex-direction: column;
+            background-color: white;
+            border: 2px solid #004864;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        #chatbotHeader {
+            background-color: #005864;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #chatbotMessages {
+            padding: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .message {
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .user {
+            background-color: #d1e7dd;
+            text-align: right;
+        }
+        .bot {
+            background-color: #f8d7da;
+            text-align: left;
+        }
+        #chatInput {
+            padding: 10px;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+        #chatLogo {
+            cursor: pointer;
+            width: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DMI Engineering College</h1>
+    <p>Established 2010 | Enormous Achievements | National Hackathons</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About DMI Engineering College</h2>
+    <p>Established in 2010, DMI Engineering College has set benchmarks in education and technology. Our institution is known for its infrastructure, dedicated faculty, and students' achievements in both academics and extracurricular activities.</p>
+</section>
+
+<section id="departments">
+    <h2>Our Departments</h2>
+    <ul>
+        <li>B.Tech - Artificial Intelligence & Data Science (AI&DS)</li>
+        <li>B.Tech - Information Technology (IT)</li>
+        <li>B.E - Computer Science & Engineering (CSE)</li>
+        <li>B.E - Mechanical Engineering (Mech)</li>
+        <li>B.E - Electrical and Electronics Engineering (EEE)</li>
+        <li>B.E - Electronics and Communication Engineering (ECE)</li>
+        <li>B.E - Civil Engineering</li>
+    </ul>
+</section>
+
+<section id="sports">
+    <h2>Sports Facilities</h2>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="https://www.shutterstock.com/image-photo/cricket-batsman-ball-players-action-260nw-600556181.jpg" alt="Cricket">
+            <h3>Cricket</h3>
+            <p>Our cricket team has won numerous championships across the region.</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://dtnext-prod.s3.ap-south-1.amazonaws.com/imported/import/Articles/2018/Apr/201804030058396513_Loyola-College-starts-in-style_SECVPF.gif" alt="Basketball">
+            <h3>Basketball</h3>
+            <p>We have world-class basketball courts for our students.</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://playo.gumlet.io/DBJAINCOLLEGEBADMINTONCOURT/1.png" alt="Shuttle">
+            <h3>Shuttle</h3>
+            <p>Our students have excelled in state-level shuttle tournaments.</p>
+        </div>
+    </div>
+</section>
+
+<section id="admissions">
+    <h2>Admissions</h2>
+    <p>Join DMI Engineering College to explore top-notch programs in technology and innovation. We provide modern facilities, expert faculty, and a vibrant campus environment for holistic development.</p>
+    <a href="#" class="cta-button">Apply Now</a>
+</section>
+
+<footer>
+    <p>&copy; 2024 DMI Engineering College. All Rights Reserved.</p>
+</footer>
+
+<!-- Chatbot HTML -->
+<div id="chatbot">
+    <div id="chatbotHeader">Chat with Us!</div>
+    <div id="chatbotMessages"></div>
+    <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="if (event.key === 'Enter') sendMessage()">
+</div>
+<img id="chatLogo" src="https://img.icons8.com/ios-filled/50/000000/chat.png" alt="Chat Logo" onclick="toggleChatbot()">
+
+<script>
+    let step = 0;
+    let userName = '';
+    let userEmail = '';
+
+    // Function to toggle chatbot visibility
+    function toggleChatbot() {
+        const chatbot = document.getElementById('chatbot');
+        chatbot.style.display = (chatbot.style.display === 'none' || chatbot.style.display === '') ? 'flex' : 'none';
+        if (chatbot.style.display === 'flex' && step === 0) {
+            step = 1; // Move to the next step after opening
+            addMessage("Hello! What's your name?", 'bot');
+        }
+    }
+
+    // Function to send messages
+    function sendMessage() {
+        const userMessage = document.getElementById('chatInput').value;
+        if (userMessage) {
+            addMessage(userMessage, 'user');
+            document.getElementById('chatInput').value = '';
+
+            if (step === 1) {
+                userName = userMessage;
+                step = 2;
+                addMessage(`Nice to meet you, ${userName}! Could you please provide your email?`, 'bot');
+            } else if (step === 2) {
+                userEmail = userMessage;
+                step = 3;
+                addMessage(`Thank you, ${userName}! How can I assist you today?`, 'bot');
+            } else {
+                handleUserQuery(userMessage);
+            }
+        }
+    }
+
+    // Function to handle user queries
+    function handleUserQuery(query) {
+        const lowerQuery = query.toLowerCase();
+        let response = '';
+
+        if (lowerQuery.includes('admissions')) {
+            response = 'You can apply for admission through our official website or visit our campus for more details.';
+        } else if (lowerQuery.includes('departments')) {
+            response = 'We offer programs in AI & DS, IT, CSE, Mech, EEE, ECE, and Civil Engineering.';
+        } else if (lowerQuery.includes('sports')) {
+            response = 'We have excellent sports facilities including cricket, basketball, and shuttle courts.';
+        } else if (lowerQuery.includes('hostel')) {
+            response = 'We provide comfortable hostel facilities for both boys and girls.';
+        } else if (lowerQuery.includes('faculty')) {
+            response = 'Our faculty consists of highly qualified and experienced professionals in various fields.';
+        } else if (lowerQuery.includes('results')) {
+            response = 'Our students consistently achieve outstanding results in their examinations.';
+        } else if (lowerQuery.includes('achievements')) {
+            response = 'We have numerous awards in academics, sports, and technical competitions.';
+        } else if (lowerQuery.includes('campus')) {
+            response = 'Our campus is spacious, green, and equipped with modern amenities.';
+        } else if (lowerQuery.includes('surroundings')) {
+            response = 'The college is located in a serene environment, conducive to learning.';
+        } else if (lowerQuery.includes('placements')) {
+            response = 'We have a dedicated placement cell that helps students secure job placements in top companies.';
+        } else {
+            response = 'I am sorry, I didn\'t understand that. Can you please rephrase?';
+        }
+
+        addMessage(response, 'bot');
+    }
+
+    // Function to add messages to the chat
+    function addMessage(message, sender) {
+        const messagesContainer = document.getElementById('chatbotMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', sender);
+        messageDiv.textContent = message;
+        messagesContainer.appendChild(messageDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto-scroll
+    }
+</script>
+
+</body>
+</html>
